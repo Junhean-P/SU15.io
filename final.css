@@ -1,0 +1,242 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+/* Button Styling */
+.btn-success {
+    margin-top: 10px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #28a745;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Container Box Styling */
+#container {
+    background-color: #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 40px;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#container.show {
+    opacity: 1;
+}
+
+/* Form Fields */
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    width: 100%; /* Makes input fields take full width */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+
+
+/* Table Styling */
+.table {
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #container {
+        padding: 20px;
+    }
+    .btn-success {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+h1 {
+    color: #ff6600 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-group input[type="date"] {
+    margin-bottom: 20px; /* Adjust this value as needed */
+}
+/* Initially, the container is hidden */
+#container {
+    display: none; /* Hidden by default */
+}
+
+/* When the container has the 'show' class, make it visible */
+#container.show {
+    display: block;
+}
+
+
+.show-btn.btn-danger {
+    background-color: #dc3545; /* Red when hidden */
+}
+
+.show-btn.btn-primary {
+    background-color: #007bff; /* Blue when hidden */
+}
+
+
+.form-group {
+    margin-bottom: 20px; /* Added more spacing between fields */
+}
+
+body {
+    position: relative;
+    height: 100vh; /* Ensures full viewport height */
+    margin: 0;
+    background-image: url('image/242257.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* Stronger blur effect */
+    background: rgba(255, 255, 255, 0.1); /* Slight overlay */
+    z-index: -1;
+}
+
+.container {
+    background-image: url('image/pngtree-vector-design-black-background-with-white-lines-resembling-wood-texture-picture-image_15213911.jpg');
+    background-size: cover; /* Ensures the image fully covers the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+.form-group label {
+    color:white;
+    font-weight: bold;}
+
+    .table td {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .search-form {
+        display: flex;
+        justify-content: flex-end; /* Aligns the content to the right */
+        margin-bottom: 20px; /* Adds space below the search form */
+        align-items: center; /* Vertically centers the input and button */
+    }
+    
+    .search-form input {
+        width: 250px; /* Sets the width of the input field */
+        padding: 10px; /* Adds padding for the input */
+        font-size: 16px; /* Ensures the text is legible */
+        border-radius: 5px; /* Softens the corners */
+        border: 1px solid #ccc; /* Adds a border */
+        margin-right: 10px; /* Adds space between the input and the button */
+        transition: border-color 0.3s ease; /* Adds transition for border color */
+    }
+    
+    .search-form input:focus {
+        outline: none; /* Removes the default focus outline */
+        border-color: #4A90E2; /* Changes border color when focused */
+    }
+    
+    .search-form .searchbtn {
+        background-color: #4A90E2; /* Primary color for the button */
+        color: white; /* Button text color */
+        padding: 10px 20px; /* Adds padding for button size */
+        border: none; /* Removes default button border */
+        border-radius: 5px; /* Softens the corners */
+        font-size: 16px; /* Ensures text is legible */
+        cursor: pointer; /* Indicates that the button is clickable */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    }
+    
+    .search-form .searchbtn:hover {
+        background-color: #357ABD; /* Darker blue on hover */
+        transform: scale(1.05); /* Slightly enlarges the button */
+    }
+    
+    .search-form .searchbtn:active {
+        transform: scale(1); /* Resets the size when clicked */
+        background-color: #2F6A9A; /* Darker color when button is clicked */
+    }
+    
+    #submit-btn {
+        background-color: #28a745; /* Green background */
+        color: white; /* White text color */
+        padding: 10px 20px; /* Padding to make the button bigger */
+        border: none; /* Removes default border */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 16px; /* Clear font size */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for color and scaling */
+    }
+    
+    #submit-btn:hover {
+        background-color: #218838; /* Darker green on hover */
+        transform: scale(1.05); /* Slightly enlarges the button */
+    }
+    
+    #submit-btn:active {
+        background-color: #1e7e34; /* Even darker green when clicked */
+        transform: scale(1); /* Resets size on click */
+    }
+    
+    #submit-btn:focus {
+        outline: none; /* Removes default focus outline */
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Adds a blue glow around the button when focused */
+    }
+    
+            
